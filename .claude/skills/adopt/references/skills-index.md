@@ -7,7 +7,7 @@ Insert this as the `## Skills — reach for the right one` section. Drop any lin
 
 These live in `.claude/skills/` and trigger from their descriptions; this is the fast map.
 
-- **Build & progress:** `/build`, `/feature <name>`, `/roadmap`, `/status`, `/verify`, `/blocker`, `/checkpoint` + `/rollback`, `/future`.
+- **Build & progress:** `/plan <feature>` (plan a new track), `/build`, `/feature <name>`, `/roadmap`, `/status`, `/verify`, `/blocker`, `/checkpoint` + `/rollback`, `/future`.
 - **Quality & security:** `/audit`, `/audit-task`, `security`, `web-design-guidelines`, `/document`, `/improve`.
 - **Next.js, React & styling:** `next-best-practices`, `next-cache-components`, `component-system`, `tailwind-v4`, `shadcn`, `vercel-react-best-practices`, `vercel-composition-patterns`, `vercel-react-view-transitions`.
 - **Testing:** `/test`, `/e2e <criteria>`, `/test-write`, `/test-heal`, `/heal`.

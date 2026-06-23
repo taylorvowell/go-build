@@ -101,8 +101,9 @@ captured: YYYY-MM-DD
 
 - **`list`** — read `docs/icebox/README.md` and render it (id · title · status · effort · serves · one-liner).
 - **`develop <ICE-NNN>`** — the user wants to build it. Read the entry, then route into the build system: if it's a
-  cohesive 3+-step epic, scaffold a **track** (`docs/runbooks/add-a-track.md`) seeded from the entry; if it's a
-  small change, do it directly. Set the entry `status: building` while in flight. **Do not delete it yet.**
+  cohesive multi-step epic, hand it to the `plan` skill (`/plan <the entry's intent>`) to scaffold a **track** seeded
+  from the entry; if it's a small change, do it directly. Set the entry `status: building` while in flight. **Do not
+  delete it yet.**
 - **`done <ICE-NNN>`** — the work shipped. **Delete** `docs/icebox/ICE-NNN-slug.md`, regenerate the index, and
   confirm. (The backlog only holds the undone; history lives in git + the track/ADR that built it.)
 
@@ -121,4 +122,4 @@ captured: YYYY-MM-DD
 ## Relationship to the rest of the system
 
 - `docs/icebox/` is the **pre-track funnel**; tracks (`.claude/feature-tracks/`) are scheduled work. An idea becomes
-  a track via `develop` → `add-a-track`. `/roadmap` covers tracks; this skill covers the not-yet-scheduled backlog.
+  a track via `develop` → the `plan` skill (`/plan`). `/roadmap` covers tracks; this skill covers the not-yet-scheduled backlog.
